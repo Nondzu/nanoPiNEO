@@ -9,6 +9,8 @@ INCLUDEPATH += .
 
 # Input
 HEADERS += \
-    tcp_server/tcp_server.h
+    tcp_server/tcp_server.h \
+    SerialPort/serial.h
 SOURCES += main.cpp  \
-    tcp_server/tcp_server.cpp
+    tcp_server/tcp_server.cpp \
+    SerialPort/serial.cpp
