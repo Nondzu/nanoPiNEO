@@ -1,4 +1,6 @@
 
+
+
 /*
     C socket server example
 */
@@ -8,7 +10,7 @@
 #include<sys/socket.h>
 #include<arpa/inet.h> //inet_addr
 #include<unistd.h>    //write
-
+#include <qt4/QtNetwork/qtcpserver.h>
 int main(int argc , char *argv[])
 {
     int socket_desc , client_sock , c , read_size;
@@ -26,7 +28,7 @@ int main(int argc , char *argv[])
     //Prepare the sockaddr_in structure
     server.sin_family = AF_INET;
     server.sin_addr.s_addr = INADDR_ANY;
-    server.sin_port = htons( 8180 );
+    server.sin_port = htons( 8811 );
 
     //Bind
     if( bind(socket_desc,(struct sockaddr *)&server , sizeof(server)) < 0)

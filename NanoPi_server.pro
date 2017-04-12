@@ -1,7 +1,7 @@
 QT += core
 QT -= gui
 
-TARGET = tcp_server
+TARGET = NanoPi_server
 CONFIG += console
 CONFIG -= app_bundle
 
